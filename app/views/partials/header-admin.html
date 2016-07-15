@@ -1,0 +1,48 @@
+<header id="header-admin">
+	<div class="logo"><img src="/images/logo-theos-gris.jpg" width="150" height="65"></div>
+	<div class="user-preferences">
+		<ul>
+			<li>
+				<a href="#" class="icon-link"><i class="fa fa-envelope color-info"></i></a>
+			</li>
+			<li>
+				<a href="#" class="icon-link"><i class="fa fa-bell nav-icon color-info"></i></a>
+			</li>
+			<li>
+				<div class="dropdown">
+					<a class="btn btn-primary" data-toggle="dropdown">
+			            {{username}} &nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+			        </a>
+			        <ul class="dropdown-menu" aria-labelledby="dLabel">
+				    	<li>
+				    		<a href="#">Ver Perfil</a>
+				    	</li>
+				    	<li role="separator" class="divider"></li>
+				    	<li>
+				    		<a href="#">Desconectar</a>
+				    	</li>
+				  	</ul>
+			    </div>    
+			</li>	
+		</ul>
+	</div>
+</header>
+<nav class="left-nav">
+	<ul>
+		<li>
+			<a href="#/admin"  id="dashboard" data-ng-class="isDashboard ? 'active': 'Passive'">Dashboard</a>
+		</li>
+		<li>
+			<a href="#/admin/temas" id="temas" data-ng-class="isTemas ? 'active': 'Passive'">Temas (Materias)</a>
+		</li>
+		<li>
+			<a href="#/admin/ubicaciones" id="ubicaciones" data-ng-class="isLocation ? 'active': 'Passive'">Ubicaciones</a>
+		</li>
+		<li>
+			<a href="#/admin/grupos" id="grupos" data-ng-class="isGroups ? 'active': 'Passive'">Grupos</a>
+		</li><!-- 
+		<li>
+			<a href="#">Dashboard</a>
+		</li> -->
+	</ul>
+</nav>
